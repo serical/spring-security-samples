@@ -1,0 +1,9 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: oauth2-server
+
+config:
+  clientId: 2ec1d45c-8127-444f-86e4-2a1c200cc837
+  clientSecret: 6XJKxWWHy9KU
