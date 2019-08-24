@@ -16,6 +16,8 @@
     <properties>
         <spring.boot.version>2.1.5.RELEASE</spring.boot.version>
         <spring.cloud.version>Greenwich.RELEASE</spring.cloud.version>
+        <mysql-connector-java.version>8.0.15</mysql-connector-java.version>
+        <mapper-spring-boot-starter.version>2.1.5</mapper-spring-boot-starter.version>
     </properties>
 
     <dependencyManagement>
@@ -34,6 +36,17 @@
                 <version>${spring.cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector-java.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>tk.mybatis</groupId>
+                <artifactId>mapper-spring-boot-starter</artifactId>
+                <version>${mapper-spring-boot-starter.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

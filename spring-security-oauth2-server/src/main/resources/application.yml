@@ -3,6 +3,10 @@ server:
 spring:
   application:
     name: oauth2-server
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/oauth2?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 88888888
 
 config:
   clientId: 2ec1d45c-8127-444f-86e4-2a1c200cc837
