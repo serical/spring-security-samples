@@ -11,6 +11,7 @@
 
     <modules>
         <module>spring-security-oauth2-server</module>
+        <module>spring-security-oauth2-resource</module>
     </modules>
 
     <properties>
@@ -18,6 +19,7 @@
         <spring.cloud.version>Greenwich.RELEASE</spring.cloud.version>
         <mysql-connector-java.version>8.0.15</mysql-connector-java.version>
         <mapper-spring-boot-starter.version>2.1.5</mapper-spring-boot-starter.version>
+        <hashids.version>1.0.3</hashids.version>
     </properties>
 
     <dependencyManagement>
@@ -47,6 +49,11 @@
                 <groupId>tk.mybatis</groupId>
                 <artifactId>mapper-spring-boot-starter</artifactId>
                 <version>${mapper-spring-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hashids</groupId>
+                <artifactId>hashids</artifactId>
+                <version>${hashids.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

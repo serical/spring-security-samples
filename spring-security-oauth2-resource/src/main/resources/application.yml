@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: oauth2-resource
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/oauth2_resource?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 88888888
+
+security:
+  oauth2:
+    client:
+      client-id: 2ec1d45c-8127-444f-86e4-2a1c200cc837
+      client-secret: $2a$10$mI8yP3nB0bGzNH.IPW/ltuXnkx/u/FzBIjSF16ulC3cuhOc5AMH7i
+      access-token-uri: http://localhost:8080/oauth/token
+      user-authorization-uri: http://localhost:8080/oauth/authorize
+    resource:
+      token-info-uri: http://localhost:8080/oauth/check_token
